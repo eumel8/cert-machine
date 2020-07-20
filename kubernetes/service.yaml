@@ -1,0 +1,12 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: cert-machine
+spec:
+  selector:
+    app: cert-machine
+  ports:
+    - port: 80
+      targetPort: 5000
+
